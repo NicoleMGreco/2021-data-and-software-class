@@ -21,7 +21,7 @@ def test_process_data():
     input_data = np.array([[0,32],[1,212]])
     function_output = plotting.process_data(input_data)
     expected_output = np.array([[0,32,273],[1,212,373]])
-    
+
     assert(np.all(function_output == expected_output))
 
 def test_read_data():
@@ -44,7 +44,7 @@ def test_plot_data():
 
     if os.path.exists(plot_filename):
         os.remove(plot_filename)
-        
+    
     plotting.plot_data(input_data, plot_filename)
 
     assert (os.path.exists(plot_filename))
