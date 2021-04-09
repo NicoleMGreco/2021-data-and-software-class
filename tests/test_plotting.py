@@ -44,7 +44,7 @@ def test_plot_data():
 
     if os.path.exists(plot_filename):
         os.remove(plot_filename)
-    
+
     plotting.plot_data(input_data, plot_filename)
 
     assert (os.path.exists(plot_filename))
